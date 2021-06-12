@@ -39,7 +39,7 @@ app.post("/render", async (req, res) => {
   try {
 
     let browser = await puppeteer.launch({
-      headless: false
+      headless: true
     });
 
     let page = await browser.newPage();
