@@ -94,6 +94,6 @@ app.post("/render", async (req, res) => {
 
 });
 
-app.listen(3001, () => {
-  console.info("Server running on port 3001");
+app.listen(process.env.PORT || 3001, () => {
+  console.info("Server running on port " + (process.env.PORT || 3001));
 });
